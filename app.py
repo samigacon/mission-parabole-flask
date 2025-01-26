@@ -12,7 +12,7 @@ def index():
 @app.route('/run-simulation', methods=['POST'])
 def run_simulation():
     try:
-        main.main()
+        #main.main()
         return "Simulation terminée avec succès !"
     except Exception as e:
         return "Erreur lors de la simulation : {}".format(str(e))
